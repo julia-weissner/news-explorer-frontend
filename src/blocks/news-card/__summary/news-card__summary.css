@@ -1,0 +1,14 @@
+.news-card__summary {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__summary {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,14 @@
+.header__menu {
+    width: 25px;
+    height: 30px;
+    margin-top: 18px;
+    margin-right: 24px;
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .header__menu {
+        display: flex;
+        position: relative;
+    }
+}

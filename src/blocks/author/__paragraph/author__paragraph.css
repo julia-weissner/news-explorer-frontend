@@ -1,0 +1,11 @@
+.author__paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 0;
+    color: #1A1B22;
+}
+
+.author__paragraph:nth-child(2n) {
+    margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+@import url(./_logged/header__main-page-button_logged.css);
+@import url(./_mobile/header__main-page-button_mobile.css);
+
+.header__main-page-button {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 69px;
+    text-decoration: none;
+    border-bottom: 3px solid #FFFFFF;
+    margin-right: 34px;
+}
+
+.header__main-page-button:hover {
+    opacity: 0.5;
+    transition: linear 0.4s;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__main-page-button {
+        font-size: 16px;
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__main-page-button { 
+        font-size: 14px;      
+        max-width: 64px;
+    }
+}
+

@@ -1,0 +1,36 @@
+@import url(./_log-in/news-card__notice_log-in.css);
+
+.news-card__notice {
+    max-width: 182px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    margin-top: 24px;
+    margin-right: 5px;
+    border: none;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .news-card__notice {
+        max-width: 150px;
+        font-size: 8px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__notice {
+        height: 35px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-card__notice {
+        margin-top: 16px;
+    }
+}

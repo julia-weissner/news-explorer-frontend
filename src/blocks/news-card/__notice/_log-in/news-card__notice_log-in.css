@@ -1,0 +1,13 @@
+.news-card__notice.news-card__notice_log-in {
+    font-size: 10px;
+   /* 
+    display: block; */
+    display: none;
+    margin-left: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .news-card__notice.news-card__notice_log-in {
+        margin-left: auto;
+    }
+}

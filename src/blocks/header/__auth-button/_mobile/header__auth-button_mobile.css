@@ -1,0 +1,9 @@
+.button.header__auth-button.header__auth-button_mobile {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    width: 288px;
+    height: 56px;
+    margin: 22px auto;
+}

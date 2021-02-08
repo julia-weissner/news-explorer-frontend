@@ -1,0 +1,36 @@
+@import url(./_mobile/header__auth-button_mobile.css);
+
+.button.header__auth-button {
+    font-size: 18px;
+    font-weight: 500;
+    height: 48px;
+    width: 176px;
+    background-color: Transparent;
+    color: #FFFFFF;
+    align-self: center;
+    border: 1px solid #FFFFFF;
+    margin-right: 104px;
+    display: none;
+   /* display: block; */
+}
+
+.header__auth-button:hover {
+    opacity: 0.5;
+    transition: linear 0.4s;
+}
+
+  @media screen and (max-width: 1024px) {
+    .button.header__auth-button {
+        font-size: 16px;
+        height: 40px;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button.header__auth-button {
+        font-size: 14px;
+        margin-right: 40px;
+        height: 40px;
+    }
+}

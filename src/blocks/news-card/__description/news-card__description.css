@@ -1,0 +1,25 @@
+.news-card__description {
+    min-height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .news-card__description {
+        padding: 18px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__description {
+        padding: 16px 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-card__description {
+        height: 250px;
+    }
+}

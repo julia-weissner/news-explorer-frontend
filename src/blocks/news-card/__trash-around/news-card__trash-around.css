@@ -1,0 +1,35 @@
+.news-card__trash-around {
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-right: 24px;
+    align-items: center;  
+}
+
+@media screen and (max-width: 1024px) {
+    .news-card__trash-around {
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__trash-around {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-card__trash-around {
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+}

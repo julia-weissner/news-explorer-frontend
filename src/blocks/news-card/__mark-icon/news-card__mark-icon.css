@@ -1,0 +1,47 @@
+.news-card__mark-icon {
+    background: url(../../../images/mark-normal.svg) center no-repeat;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-right: 24px;
+    transition: transform .3s linear;
+}
+
+.news-card__mark-icon:hover {
+    background-image: url(../../../images/mark_hover.svg);
+    transition: linear 0.4s;
+}
+
+.news-card__mark-icon_marked {
+    background-image: url(../../../images/mark-marked.svg);
+  }
+  
+.news-card__mark-icon_marked {
+    background-image: url(../../../images/mark-marked.svg);
+  }
+  
+@media screen and (max-width: 1024px) {
+    .news-card__mark-icon {
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__mark-icon {
+        width: 25px;
+        height: 25px;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-card__mark-icon {
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+}

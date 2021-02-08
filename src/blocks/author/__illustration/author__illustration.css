@@ -1,0 +1,26 @@
+.author__illustration {
+    margin-right: 56px;
+}
+
+@media screen and (max-width: 1024px) {
+    .author__illustration {
+        max-width: 365px;
+        margin-right: 43px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author__illustration {
+        max-width: 232px;
+        height: 232px;
+        margin-right: 32px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .author__illustration {
+        max-width: 272px;
+        margin: auto;
+    }
+}

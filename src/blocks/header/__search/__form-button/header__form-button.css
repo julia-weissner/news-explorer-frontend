@@ -1,0 +1,28 @@
+.header__form-button {
+    background-color: #2F71E5;
+    color: white;
+    position: relative;
+    width: 190px;
+}
+
+.header__form-button:hover {
+    background-color: #347EFF;
+    transition: linear 0.4s;
+}
+
+.header__form-button:active {
+    background-color: #2A65CC;
+}
+
+@media screen and (max-width: 768px) {
+    .header__form-button {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__form-button {
+        width: 280px;
+        height: 53px;
+    }
+}

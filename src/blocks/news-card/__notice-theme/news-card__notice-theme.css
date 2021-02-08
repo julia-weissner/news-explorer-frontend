@@ -1,0 +1,35 @@
+.news-card__notice-theme {
+    width: 88px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px;  
+    position: relative;
+    align-self: start;
+    margin-left: 24px;
+    border: none;  
+}
+
+@media screen and (max-width: 1024px) {
+    .news-card__notice-theme {
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__notice-theme {
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-card__notice-theme {
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+}

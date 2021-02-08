@@ -1,0 +1,7 @@
+@import url(../__cards/search__cards.css);
+@import url(../__show-more/search__show-more.css);
+
+.search__results {
+    display: flex;
+    flex-direction: column;
+}

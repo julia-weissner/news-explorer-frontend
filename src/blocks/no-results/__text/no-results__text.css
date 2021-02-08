@@ -1,0 +1,10 @@
+.no-results__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #B6BCBF;
+    max-width: 330px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}

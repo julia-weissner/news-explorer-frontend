@@ -5,9 +5,11 @@
     border: none;
     width: 40px;
     height: 40px;
-    margin-top: 24px;
-    margin-right: 24px;
     transition: transform .3s linear;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    z-index: 1;
 }
 
 .news-card__mark-icon:hover {
@@ -18,15 +20,14 @@
 .news-card__mark-icon_marked {
     background-image: url(../../../images/mark-marked.svg);
   }
-  
-.news-card__mark-icon_marked {
-    background-image: url(../../../images/mark-marked.svg);
-  }
-  
+
+
+
 @media screen and (max-width: 1024px) {
     .news-card__mark-icon {
-        margin-top: 16px;
-        margin-right: 16px;
+        top: 16px;
+        right: 16px;
+        border-radius: 5px;
     }
 }
 
@@ -34,14 +35,14 @@
     .news-card__mark-icon {
         width: 25px;
         height: 25px;
-        margin-top: 8px;
-        margin-right: 8px;
+        top: 8px;
+        right: 8px;
     }
 }
 
 @media screen and (max-width: 425px) {
     .news-card__mark-icon {
-        margin-top: 16px;
-        margin-right: 16px;
+        top: 16px;
+        right: 16px;
     }
 }

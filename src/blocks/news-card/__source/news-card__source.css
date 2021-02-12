@@ -8,12 +8,15 @@
     text-transform: uppercase;
     display: flex;
     position: relative;
-    margin-bottom: 0;
+    margin-left: 24px;
+    margin-bottom: 24px;
 }
 
 @media screen and (max-width: 768px) {
-    .news-card__source {
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .news-card__source {
+      font-size: 14px;
+      line-height: 18px;
+      margin-left: 16px;
+      margin-bottom: 16px;
+  }
 }

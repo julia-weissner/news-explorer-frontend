@@ -2,12 +2,11 @@
     background: url(../../../images/grey.png) center no-repeat;
     background-size: contain;
     background-color: white;
-    border-radius: 10px;
     border: none;
     width: 25px;
     height: 25px;
-    display: flex;
     margin-left: 7px;
+    margin-top: 7px;
     transition: transform .3s linear;
 }
 
@@ -16,22 +15,11 @@
     transition: linear 0.4s;
 }
 
-@media screen and (max-width: 1024px) {
-    .news-card__trash {
-        
-    }
-}
-
 @media screen and (max-width: 768px) {
     .news-card__trash {
         width: 20px;
         height: 20px;
+        margin-top: 5px;
         margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .news-card__trash {
-        
     }
 }

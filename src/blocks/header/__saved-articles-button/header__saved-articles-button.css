@@ -12,7 +12,7 @@
     text-decoration: none;
     margin-right: 32px;
     display: flex;
-   /* display: none;  */
+  /*  display: none;*/
 }
 
 .header__saved-articles-button:hover {
@@ -30,8 +30,14 @@
 @media screen and (max-width: 768px) {
     .header__saved-articles-button {
         font-size: 14px;
-        margin-right: 14px;      
+        margin-right: 14px;
     }
 }
 
-
+@media screen and (max-width: 580px) {
+  .header__saved-articles-button {
+     font-size: 12px;
+     margin-right: 10px;
+     margin-top: 1px;
+ }
+}

@@ -27,9 +27,17 @@
 }
 
 @media screen and (max-width: 768px) {
-    .header__main-page-button { 
-        font-size: 14px;      
+    .header__main-page-button {
+        font-size: 14px;
         max-width: 64px;
     }
+}
+
+@media screen and (max-width: 580px) {
+   .header__main-page-button {
+      font-size: 12px;
+      margin-right: 15px;
+      margin-top: 6px;
+  }
 }
 

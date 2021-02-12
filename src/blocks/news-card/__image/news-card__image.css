@@ -1,23 +1,9 @@
-@import url(./_log-in/news-card__image_parks_log-in.css);
-@import url(./_log-in/news-card__image_lights_log-in.css);
-@import url(./_log-in/news-card__image_taiga_log-in.css);
-
 .news-card__image {
     max-width: 400px;
     height: 272px;
     border-radius: 10px;
-    background-image: url(../../../images/first-pic.jpg);
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.news-card__image_lights {
-    background-image: url(../../../images/second-pic.jpg);
-}
-
-.news-card__image_taiga {
-    background-image: url(../../../images/third-pic.jpg);
+    position: relative;
 }
 
 @media screen and (max-width: 1024px) {

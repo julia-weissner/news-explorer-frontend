@@ -8,29 +8,33 @@
     font-size: 10px;
     font-weight: 500;
     line-height: 12px;
-    margin-top: 24px;
-    margin-right: 5px;
     border: none;
     display: block;
+    position: absolute;
+    top: 24px;
+    right: 69px;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {
     .news-card__notice {
         max-width: 150px;
         font-size: 8px;
-        margin-top: 16px;
+        top: 16px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .news-card__notice {
-        height: 35px;
-        margin-top: 8px;
+        height: 25px;
+        top: 8px;
+        right: 43px;
     }
 }
 
 @media screen and (max-width: 425px) {
     .news-card__notice {
-        margin-top: 16px;
+        top: 16px;
+        right: 48px;
     }
 }

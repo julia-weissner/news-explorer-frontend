@@ -10,8 +10,9 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
     entry: path.resolve(__dirname, 'src/index.js'),
     output: {
+
+        filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -27,8 +28,8 @@ module.exports = {
                     {
                         loader:'css-loader',
                         options: {
-                            importLoaders: 2
-                        }
+                            importLoaders: 2,
+                        },
                     },
                     'postcss-loader'
                 ]
@@ -55,35 +56,36 @@ module.exports = {
         ]
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
-        }),
-
-        new OptimizeCssAssetsPlugin({
-            assetNameRegExp: /\.css$/g,
-            cssProcessor: require('cssnano'),
-            cssProcessorPluginOptions: {
-                preset: ['default'],
-            },
-            canPrint: true
-        }),
-
         new HtmlWebpackPlugin({
-            inject: false,
-            template: './src/index.html', //
-            filename: 'index.html'
+          inject: false,
+          template: './src/index.html',
+          filename: 'index.html'
         }),
 
         new HtmlWebpackPlugin({
           inject: false,
-          template: './src/personal.html', //
+          template: './src/personal.html',
           filename: 'personal.html'
       }),
+
+        new MiniCssExtractPlugin({
+          filename: '[name].[contenthash].css',
+          chunkFilename: '[id].[contenthash].css'
+      }),
+
+        new OptimizeCssAssetsPlugin({
+          assetNameRegExp: /\.css$/g,
+          cssProcessor: require('cssnano'),
+          cssProcessorPluginOptions: {
+          preset: ['default'],
+        },
+          canPrint: true
+    }),
 
         new WebpackMd5Hash(),
 
         new webpack.DefinePlugin({
-            'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+          'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         }),
 
         new CleanWebpackPlugin()

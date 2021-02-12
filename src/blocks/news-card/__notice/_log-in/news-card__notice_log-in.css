@@ -1,0 +1,37 @@
+.news-card__notice.news-card__notice_log-in {
+  font-size: 10px;
+
+  display: block;
+ margin-left: 80px;
+}
+
+@media screen and (max-width: 1126px) {
+.news-card__notice.news-card__notice_log-in {
+  max-width: 100px;
+  font-size: 8px;
+  top: 70px;
+  right: 24px;
+ }
+}
+
+@media screen and (max-width: 1024px) {
+  .news-card__notice.news-card__notice_log-in {
+    top: 65px;
+    right: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news-card__notice.news-card__notice_log-in {
+    top: 45px;
+    right: 8px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .news-card__notice.news-card__notice_log-in {
+    right: 16px;
+    top: 55px;
+  }
+}

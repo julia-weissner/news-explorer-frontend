@@ -1,0 +1,32 @@
+.footer__line-links {
+    list-style-type: none;
+    max-width: 416px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__line-links {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__line-links {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer__line-links {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

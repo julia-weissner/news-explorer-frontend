@@ -1,0 +1,25 @@
+.header__button-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__button-container.header__button-container_mobile {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 16px;
+    height: 112px;
+}
+
+@media screen and (max-width: 425px) {
+    .header__button-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__button-container.header__button-container_mobile {
+        display: flex;
+    }
+}

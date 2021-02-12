@@ -1,0 +1,21 @@
+.popup__close {
+  width: 26px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.popup__close.popup__close_mobile {
+  width: 20px;
+  top: 26px;
+  right: 26px;
+}
+
+@media screen and (max-width: 425px) {
+  .popup__close {
+      right: 20px;
+      top: -50px;
+  }
+}

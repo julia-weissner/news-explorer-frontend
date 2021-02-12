@@ -1,0 +1,36 @@
+.news-card__notice-theme {
+    width: 88px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    position: absolute;
+    align-self: start;
+    top: 24px;
+    left: 24px;
+    border: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .news-card__notice-theme {
+        top: 16px;
+        left: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__notice-theme {
+        top: 8px;
+        left: 8px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-card__notice-theme {
+        top: 16px;
+        left: 16px;
+    }
+}

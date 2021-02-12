@@ -1,0 +1,43 @@
+@import url(./_logged/header__saved-articles-button_logged.css);
+@import url(./_mobile/header__saved-articles-button_mobile.css);
+
+.header__saved-articles-button {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 32px;
+    display: flex;
+  /*  display: none;*/
+}
+
+.header__saved-articles-button:hover {
+    opacity: 0.5;
+    transition: linear 0.4s;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__saved-articles-button {
+        font-size: 16px;
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__saved-articles-button {
+        font-size: 14px;
+        margin-right: 14px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+  .header__saved-articles-button {
+     font-size: 12px;
+     margin-right: 10px;
+     margin-top: 1px;
+ }
+}

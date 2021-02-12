@@ -1,0 +1,23 @@
+.load__title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    display: block;
+	width: 280px;
+	height: 24px;
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+    text-align: center;
+    bottom: -20px;
+}
+
+@media screen and (max-width: 540px) {
+    .load__title {
+        bottom: 200px;
+    }
+}

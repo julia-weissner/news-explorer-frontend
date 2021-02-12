@@ -1,0 +1,21 @@
+.author__text {
+    max-width: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+    .author__text {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author__text {
+        max-width: 424px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .author__text {
+        max-width: 288px;
+    }
+}

@@ -1,0 +1,25 @@
+.news-card__image {
+    max-width: 400px;
+    height: 272px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .news-card__image {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card__image {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-card__image {
+        height: 196px;
+    }
+}

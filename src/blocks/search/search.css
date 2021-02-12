@@ -1,0 +1,37 @@
+@import url(./__cards/search__cards.css);
+@import url(./__show-more/search__show-more.css);
+@import url(./__title/search__title.css);
+@import url(./search-results/search-results.css);
+
+.search {
+    background: #F5F6F7;
+    margin: 0 auto;
+    padding-top: 70px;
+    display: none;  
+}
+
+.search_is-opened {
+    display: block;   
+}
+
+.search_log-is-opened {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .search {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search {
+        padding-top: 32px;
+    }
+}

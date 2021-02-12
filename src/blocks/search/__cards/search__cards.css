@@ -1,0 +1,20 @@
+.search__cards {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;  
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+    .search__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .search__cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+

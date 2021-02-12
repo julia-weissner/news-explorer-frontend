@@ -1,0 +1,11 @@
+@import url(./__sad-smile/no-results__sad-smile.css);
+@import url(./__text/no-results__text.css);
+@import url(./__title/no-results__title.css);
+
+.no-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F6F7;
+    display: none; /*flex*/
+}

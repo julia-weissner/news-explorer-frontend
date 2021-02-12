@@ -1,0 +1,48 @@
+@import url(./_logged/header__log-button_logged.css);
+
+.button.header__log-button {
+    font-size: 18px;
+    font-weight: 500;
+    height: 48px;
+    max-width: 100px;
+    background-color: Transparent;
+    color: #FFFFFF;
+    align-self: center;
+    border: 1px solid #FFFFFF;
+    margin-right: 104px;
+    display: block;
+  /* display: none; */
+}
+
+.header__log-button.header__log-button_logged {
+    color: #1A1B22;
+    border: 1px solid #1A1B22;
+}
+
+.header__log-button:hover {
+    opacity: 0.5;
+    transition: linear 0.4s;
+}
+
+@media screen and (max-width: 1024px) {
+    .button.header__log-button {
+        font-size: 16px;
+        height: 40px;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button.header__log-button {
+        font-size: 14px;
+        margin-right: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+  .button.header__log-button {
+     font-size: 12px;
+     margin-right: 16px;
+ }
+}

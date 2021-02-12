@@ -1,0 +1,35 @@
+.search__show-more {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    background: #FFFFFF;
+    width: 288px;
+    height: 64px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+    align-self: center;
+}
+
+.search__show-more:hover {
+    background: #E6E8EB;
+    transition: linear 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .search__show-more {
+        width: 240px;
+        height: 56px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search__show-more {
+        width: 288px;
+        margin-top: 15px;
+        margin-bottom: 32px;
+    }
+}

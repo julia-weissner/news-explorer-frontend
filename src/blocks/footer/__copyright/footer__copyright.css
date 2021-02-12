@@ -1,0 +1,27 @@
+.footer__copyright {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    color: #B6BCBF;
+    align-items: center;
+    margin-left: 104px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__copyright {
+        font-size: 14px;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__copyright {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer__copyright {
+        margin-left: 26px;
+    }
+}

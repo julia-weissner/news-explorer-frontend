@@ -1,0 +1,22 @@
+.news-card__source {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #B6BCBF;
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .news-card__source {
+      font-size: 14px;
+      line-height: 18px;
+      margin-left: 16px;
+      margin-bottom: 16px;
+  }
+}

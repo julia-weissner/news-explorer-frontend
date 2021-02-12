@@ -1,0 +1,29 @@
+.header__search-field {
+    font-size: 16px;
+    font-weight: 400;
+    width: 608px;
+    height: 61px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.header__search-field::placeholder {
+    color: #B6BCBF;
+  }
+
+@media screen and (max-width: 768px) {
+    .header__search-field {
+        font-size: 14px;
+        line-height: 22px;
+        width: 292px;
+        height: 53px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__search-field {
+        font-size: 16px;
+        padding-left: 16px;
+        width: 260px;
+    }
+}

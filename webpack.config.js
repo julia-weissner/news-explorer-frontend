@@ -8,10 +8,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src/index.js'),
+    entry: {
+      index: './src/index.js',
+      personal: './src/saved-articles/index.js'
+    },
     output: {
-
-        filename: '[name].[chunkhash].js',
+        filename: 'js_files/[name].[chunkhash].js',
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
@@ -57,20 +59,22 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-          inject: false,
           template: './src/index.html',
+          inject: 'body',
+          chunks: ['index'],
           filename: 'index.html'
         }),
 
         new HtmlWebpackPlugin({
-          inject: false,
           template: './src/personal.html',
+          inject: 'body',
+          chunks: ['personal'],
           filename: 'personal.html'
       }),
 
         new MiniCssExtractPlugin({
-          filename: '[name].[contenthash].css',
-          chunkFilename: '[id].[contenthash].css'
+          filename: "css_files/[name].[contenthash].css",
+          chunkFilename: "[id].[contenthash].css"
       }),
 
         new OptimizeCssAssetsPlugin({

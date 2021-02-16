@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../src/pages/personal.css">
-    <link rel="shortcut icon" type="image/png" href="../src/images/fav.png">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <link rel="shortcut icon" type="image/png" href="<%=require('../src/images/fav.png').default%>">
     <title>NewsExplorer</title>
 </head>
 
@@ -16,7 +16,7 @@
         <header class="header header_logged_in">
             <div class="header__bg header__bg_logged">
                 <p class="header__logo header__logo_logged">NewsExplorer</p>
-                <img class="header__menu" src="../src/images/black-strips.png" alt="две черные полоски - вход в меню">
+                <img class="header__menu" src="<%=require('../src/images/black-strips.png').default%>" alt="две черные полоски - вход в меню">
                 <div class="header__button-container">
                     <a class="header__main-page-button header__main-page-button_logged" href="./index.html">Главная</a>
                     <a class="header__saved-articles-button header__saved-articles-button_logged" href="./personal.html">Сохранённые статьи</a>
@@ -39,7 +39,7 @@
                         <picture>
                             <source srcset="src/images/parks_2_big.jpg" type="image/jpeg" media="(min-width:768px)">
                             <source srcset="src/images/parks_2_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                            <img src="./images/parks_2_big.jpg" class="news-card__card" alt="растение фикус">
+                            <img src="<%=require('./images/parks_2_big.jpg').default%>" class="news-card__card" alt="растение фикус">
                         </picture>
                         <button class="news-card__notice-theme">Природа</button>
                         <button class="news-card__notice news-card__notice_log-in">Убрать из сохранённых</button>
@@ -60,7 +60,7 @@
                       <picture>
                         <source srcset="src/images/lights_2_big.jpg" type="image/jpeg" media="(min-width:768px)">
                         <source srcset="src/images/lights_2_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                        <img src="./images/lights_2_big.jpg" class="news-card__card" alt="вид сверху на ландшафт">
+                        <img src="<%=require('./images/lights_2_big.jpg').default%>" class="news-card__card" alt="вид сверху на ландшафт">
                       </picture>
                       <button class="news-card__notice-theme">Природа</button>
                       <button class="news-card__notice news-card__notice_log-in">Убрать из сохранённых</button>
@@ -81,7 +81,7 @@
                       <picture>
                         <source srcset="src/images/taiga_2_big.jpg" type="image/jpeg" media="(min-width:768px)">
                         <source srcset="src/images/taiga_2_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                        <img src="./images/taiga_2_big.jpg" class="news-card__card" alt="лист в вазе с водой">
+                        <img src="<%=require('./images/taiga_2_big.jpg').default%>" class="news-card__card" alt="лист в вазе с водой">
                       </picture>
                       <button class="news-card__notice-theme">Тайга</button>
                       <button class="news-card__notice news-card__notice_log-in">Убрать из сохранённых</button>
@@ -102,7 +102,7 @@
                       <picture>
                           <source srcset="src/images/parks_2_big.jpg" type="image/jpeg" media="(min-width:768px)">
                           <source srcset="src/images/parks_2_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                          <img src="./images/parks_2_big.jpg" class="news-card__card" alt="растение фикус">
+                          <img src="<%=require('./images/parks_2_big.jpg').default%>" class="news-card__card" alt="растение фикус">
                       </picture>
                       <button class="news-card__notice-theme">Парки</button>
                       <button class="news-card__notice news-card__notice_log-in">Убрать из сохранённых</button>
@@ -123,7 +123,7 @@
                   <picture>
                     <source srcset="src/images/lights_2_big.jpg" type="image/jpeg" media="(min-width:768px)">
                     <source srcset="src/images/lights_2_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                    <img src="./images/lights_2_big.jpg" class="news-card__card" alt="вид сверху на ландшафт">
+                    <img src="<%=require('./images/lights_2_big.jpg').default%>" class="news-card__card" alt="вид сверху на ландшафт">
                   </picture>
                   <button class="news-card__notice-theme">Фотография</button>
                   <button class="news-card__notice news-card__notice_log-in">Убрать из сохранённых</button>
@@ -151,16 +151,17 @@
                     <li class="footer__line-link"><a class="footer__link" href="#" target="_blank">Главная</a></li>
                     <li class="footer__line-link"><a class="footer__link" href="#" target="_blank">Яндекс.Практикум</a></li>
                     <li class="footer__line-link">
-                        <a class="footer__link" href="#" target="_blank"><img src="../src/images/github.svg" alt="иконка GitHub" class="footer__social-icons"></a>
+                        <a class="footer__link" href="#" target="_blank"><img src="<%=require('../src/images/github.svg').default%>" alt="иконка GitHub" class="footer__social-icons"></a>
                     </li>
                     <li class="footer__line-link">
-                        <a class="footer__link" href="#" target="_blank"><img src="../src/images/facebook.svg" alt="иконка Facebook" class="footer__social-icons"></a>
+                        <a class="footer__link" href="#" target="_blank"><img src="<%=require('../src/images/facebook.svg').default%>" alt="иконка Facebook" class="footer__social-icons"></a>
                     </li>
                 </ul>
             </nav>
         </footer>
 
     </div>
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>

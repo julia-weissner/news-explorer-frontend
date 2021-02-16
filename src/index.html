@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../src/pages/index.css">
-    <link rel="shortcut icon" type="image/png" href="../src/images/fav.png">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <link rel="shortcut icon" type="image/png" href="<%=require('../src/images/fav.png').default%>">
     <title>NewsExplorer</title>
 </head>
 
@@ -16,7 +16,7 @@
         <header class="header">
             <div class="header__bg">
                 <p class="header__logo">NewsExplorer</p>
-                <img class="header__menu" src="../src/images/white_strips.png" alt="две белые полоски - вход в меню">
+                <img class="header__menu" src="<%=require('../src/images/white_strips.png').default%>" alt="две белые полоски - вход в меню">
                 <div class="header__button-container">
                     <a class="header__main-page-button" href="./index.html">Главная</a>
                     <a class="header__saved-articles-button" href="./personal.html">Сохранённые статьи</a>
@@ -55,7 +55,7 @@
                             <picture>
                                 <source srcset="src/images/parks_1_big.jpg" type="image/jpeg" media="(min-width:768px)">
                                 <source srcset="src/images/parks_1_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                                <img src="./images/parks_1_big.jpg" class="news-card__card" alt="вид сверху на растения">
+                                <img src="<%=require('./images/parks_1_big.jpg').default%>" class="news-card__card" alt="вид сверху на растения">
                             </picture>
                             <button class="news-card__notice">Войдите, чтобы сохранять статьи</button>
                             <button class="news-card__mark-icon"></button>
@@ -73,7 +73,7 @@
                             <picture>
                                 <source srcset="src/images/lights_1_big.jpg" type="image/jpeg" media="(min-width:768px)">
                                 <source srcset="src/images/lights_1_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                                <img src="./images/lights_1_big.jpg" class="news-card__card" alt="зеленое растение">
+                                <img src="<%=require('./images/lights_1_big.jpg').default%>" class="news-card__card" alt="зеленое растение">
                             </picture>
                             <button class="news-card__notice">Войдите, чтобы сохранять статьи</button>
                             <button class="news-card__mark-icon"></button>
@@ -91,7 +91,7 @@
                             <picture>
                                 <source srcset="src/images/taiga_1_big.jpg" type="image/jpeg" media="(min-width:768px)">
                                 <source srcset="src/images/taiga_1_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                                <img src="./images/taiga_1_big.jpg" class="news-card__card" alt="множество мелких зеленых листьев">
+                                <img src="<%=require('./images/taiga_1_big.jpg').default%>" class="news-card__card" alt="множество мелких зеленых листьев">
                             </picture>
                             <button class="news-card__notice">Войдите, чтобы сохранять статьи</button>
                             <button class="news-card__mark-icon"></button>
@@ -114,7 +114,7 @@
                 <source srcset="src/images/avatar_big.jpg" type="image/jpeg" media="(min-width:768px)">
                 <source srcset="src/images/avatar_middle.jpg" type="image/jpeg" media="(min-width:425px)">
                 <source srcset="src/images/avatar_small.jpg" type="image/jpeg" media="(min-width:320px)">
-                <img src="./images/avatar_big.jpg" class="author__illustration" alt="портрет автора проекта">
+                <img src="<%=require('./images/avatar_big.jpg').default%>" class="author__illustration" alt="портрет автора проекта">
             </picture>
 
             <div class="author__info">
@@ -133,10 +133,10 @@
                     <li class="footer__line-link"><a class="footer__link" href="#" target="_blank">Главная</a></li>
                     <li class="footer__line-link"><a class="footer__link" href="#" target="_blank">Яндекс.Практикум</a></li>
                     <li class="footer__line-link">
-                        <a class="footer__link" href="#" target="_blank"><img src="../src/images/github.svg" alt="иконка GitHub" class="footer__social-icons"></a>
+                        <a class="footer__link" href="#" target="_blank"><img src="<%=require('../src/images/github.svg').default%>" alt="иконка GitHub" class="footer__social-icons"></a>
                     </li>
                     <li class="footer__line-link">
-                        <a class="footer__link" href="#" target="_blank"><img src="../src/images/facebook.svg" alt="иконка Facebook" class="footer__social-icons"></a>
+                        <a class="footer__link" href="#" target="_blank"><img src="<%=require('../src/images/facebook.svg').default%>" alt="иконка Facebook" class="footer__social-icons"></a>
                     </li>
                 </ul>
             </nav>
@@ -144,7 +144,7 @@
 
         <div class="popup popup_mobile">
             <div class="popup__content popup__content_mobile">
-                <img src="../src/images/close.svg" alt="крестик - закрытие всплывающего окна" class="popup__close popup__close_mobile">
+                <img src="<%=require('../src/images/close.svg').default%>" alt="крестик - закрытие всплывающего окна" class="popup__close popup__close_mobile">
                 <div class="header__bg">
                     <p class="header__logo">NewsExplorer</p>
                 </div>
@@ -159,7 +159,7 @@
         <div class="popup">
             <!--  popup_is-opened -->
             <div class="popup__content">
-                <img src="../src/images/close.svg" alt="крестик - закрытие всплывающего окна" class="popup__close">
+                <img src="<%=require('../src/images/close.svg').default%>" alt="крестик - закрытие всплывающего окна" class="popup__close">
                 <h3 class="popup__title">Вход</h3>
                 <form id="form-entry" class="popup__form" name="entry" novalidate>
 
@@ -180,7 +180,7 @@
 
         <div class="popup popup_new-account">
             <div class="popup__content">
-                <img src="../src/images/close.svg" alt="крестик - закрытие всплывающего окна" class="popup__close">
+                <img src="<%=require('../src/images/close.svg').default%>" alt="крестик - закрытие всплывающего окна" class="popup__close">
                 <h3 class="popup__title">Регистрация</h3>
                 <form id="form-new-account" class="popup__form" name="entry" novalidate>
 
@@ -205,13 +205,14 @@
 
         <div class="popup popup_well-done">
             <div class="popup__content popup__content_well-done">
-                <img src="../src/images/close.svg" alt="крестик - закрытие всплывающего окна" class="popup__close">
+                <img src="<%=require('../src/images/close.svg').default%>" alt="крестик - закрытие всплывающего окна" class="popup__close">
                 <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
                 <a class="popup__link popup__link_log-in" href="#" target="_blank">Войти</a>
             </div>
         </div>
 
     </div>
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>

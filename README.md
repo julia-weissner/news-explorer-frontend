@@ -2,7 +2,7 @@
 
 
 ## Ссылка на проект на Github pages: 
-**https://julia-weissner.github.io/** 
+**https://julia-weissner.github.io/news-explorer-frontend/** 
 
 
 ## Описание: 
